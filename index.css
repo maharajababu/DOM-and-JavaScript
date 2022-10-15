@@ -1,0 +1,38 @@
+.container{
+    background-color: palegreen;
+}
+
+.lists{
+    background-color: rgb(167, 133, 20);
+}
+
+.onClickEvent{
+    background-color: blueviolet;
+}
+
+.AddEventListener{
+    background-color: brown;
+}
+
+.MouseOverEvent{
+    background-color: bisque;
+}
+
+.hiddenContent{
+    background-color: lawngreen;
+    display: none;
+}
+
+
+
+
+.grandparent {
+    background-color: red;
+}
+
+.parent{
+    background-color: blueviolet;
+}
+.child {
+    background-color: rgb(255, 127, 178);
+}
