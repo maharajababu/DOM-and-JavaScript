@@ -163,7 +163,7 @@ document.addEventListener('click', () => {
 });
 */
 
-/* ----------------------------    7. Topic: Event capturing / stop propagation /run once /delegation-----------------------*/
+/* ----------------------------    7. Topic: Event capturing / stop propagation /run once -----------------------
 const grandparent = document.querySelector(".grandparent");
 const parent = document.querySelector(".parent");
 const child = document.querySelector(".child");
@@ -207,3 +207,33 @@ child.addEventListener('click', () => {
 document.addEventListener('click', () => {
     console.log("document listener capturing");
 }, {capture: true});
+*/
+
+/* ----------------------------    8. Topic: Event Delegation --------------------------------------*/
+
+const divs = document.querySelectorAll("div");
+console.log(divs);
+
+document.addEventListener('click', e => {
+    if(e.target.matches('div')){
+        console.log("EVENT DELEGATIOn");
+        console.log(e);
+    }
+})
+
+/*
+divs.forEach(div => {
+    div.addEventListener('click', e => {
+        console.log(e);
+    });
+})
+*/
+
+/*
+const newDiv = document.createElement('div');
+newDiv.style.backgroundColor = 'green';
+newDiv.innerText = "this is new div";
+document.body.append(newDiv);
+*/
+
+// Not finished
